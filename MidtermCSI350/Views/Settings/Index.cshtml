@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Current People in the Company</h1>
+    <p>Currently there are @TempData["ManagerCount"] manager/s, and @TempData["EmployeeCount"] employees that are guided by that managers.</p>
+
+    <p>You can add more managers by pressing the "Create New Manager" from Navigation, or by pressing this link
+        <br /><a asp-controller="Manager" asp-action="Create">Create Now</a>
+    </p>
+
+    <p>You can add more employees by pressing the "Create New Employee" from Navigation, or by pressing this link
+        <br /><a asp-controller="Employee" asp-action="Create">Create Now</a>
+    </p>
+
+    <p>To view the application report go to Privacy tab or press <a href="~/ApplicationReport.pdf">this button</a></p>
+</div>
